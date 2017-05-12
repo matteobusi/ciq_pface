@@ -1,0 +1,9 @@
+<settings>
+    <setting propertyKey="@Properties.myString" title="@Strings.MyStringTitle" >
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.HelloWorld</listEntry>
+            <listEntry value="1">@Strings.Ackbar</listEntry>
+            <listEntry value="2">@Strings.Garmin</listEntry>
+        </settingConfig>
+    </setting>
+</settings>
