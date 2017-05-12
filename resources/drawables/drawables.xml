@@ -1,0 +1,11 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <bitmap id="Walk0" filename="walk_0.png" />
+    <bitmap id="Walk1" filename="walk_1.png" />
+    <bitmap id="Walk2" filename="walk_2.png" />    
+    <bitmap id="Walk3" filename="walk_3.png" />
+    <bitmap id="Walk4" filename="walk_4.png" />
+    <bitmap id="Walk5" filename="walk_5.png" />
+    <bitmap id="Walk6" filename="walk_6.png" />    
+    <bitmap id="Walk7" filename="walk_7.png" />
+</drawables>
