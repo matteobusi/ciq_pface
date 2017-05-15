@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<pcToLineNum>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="38" pc="268435456" symbol="loadSettings"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="40" pc="268435460" symbol="loadSettings"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="41" pc="268435479" symbol="loadSettings"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="42" pc="268435503" symbol="loadSettings"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="43" pc="268435527" symbol="loadSettings"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="44" pc="268435551" symbol="loadSettings"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="45" pc="268435575" symbol="loadSettings"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="46" pc="268435599" symbol="loadSettings"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="47" pc="268435623" symbol="loadSettings"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="50" pc="268435648" symbol="drawField"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="52" pc="268435652" symbol="drawField"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="54" pc="268435672" symbol="drawField"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="58" pc="268435728" symbol="drawField"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="59" pc="268435760" symbol="drawField"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="60" pc="268435783" symbol="drawField"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="62" pc="268435787" symbol="drawField"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="64" pc="268435812" symbol="drawField"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="68" pc="268435884" symbol="drawField"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="71" pc="268435945" symbol="drawField"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="75" pc="268435991" symbol="drawSeconds"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="77" pc="268435995" symbol="drawSeconds"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="82" pc="268436010" symbol="initialize"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="84" pc="268436014" symbol="initialize"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="85" pc="268436032" symbol="initialize"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="88" pc="268436056" symbol="onLayout"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="90" pc="268436060" symbol="onLayout"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="91" pc="268436103" symbol="onLayout"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="93" pc="268436146" symbol="onLayout"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="98" pc="268436504" symbol="onLayout"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="100" pc="268436516" symbol="onLayout"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="103" pc="268436551" symbol="animCallback"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="105" pc="268436555" symbol="animCallback"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="106" pc="268436574" symbol="animCallback"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="108" pc="268436596" symbol="animCallback"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="112" pc="268436613" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="114" pc="268436617" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="116" pc="268436629" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="117" pc="268436649" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="119" pc="268436681" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="121" pc="268436693" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="122" pc="268436706" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="124" pc="268436719" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="126" pc="268436726" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="128" pc="268436737" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="129" pc="268436754" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="132" pc="268436794" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="134" pc="268436805" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="141" pc="268436815" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="142" pc="268436832" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="143" pc="268436876" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="145" pc="268436964" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="147" pc="268436974" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="149" pc="268436992" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="151" pc="268437003" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="155" pc="268437024" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="159" pc="268437040" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="160" pc="268437092" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="162" pc="268437150" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="163" pc="268437173" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="165" pc="268437196" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="166" pc="268437224" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="168" pc="268437234" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="169" pc="268437247" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="171" pc="268437251" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="173" pc="268437282" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="174" pc="268437289" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="175" pc="268437302" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="176" pc="268437306" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="178" pc="268437313" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="179" pc="268437326" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="180" pc="268437342" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="181" pc="268437349" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="183" pc="268437356" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="185" pc="268437375" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="186" pc="268437403" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="187" pc="268437450" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="189" pc="268437482" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="190" pc="268437510" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="191" pc="268437566" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="193" pc="268437604" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="194" pc="268437636" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="195" pc="268437674" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="197" pc="268437712" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="199" pc="268437725" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="200" pc="268437757" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="202" pc="268437778" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="204" pc="268437813" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="205" pc="268437863" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="208" pc="268437883" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="209" pc="268437911" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="211" pc="268437940" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="213" pc="268437951" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="214" pc="268437979" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="215" pc="268437996" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="217" pc="268438019" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="218" pc="268438037" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="219" pc="268438065" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="221" pc="268438086" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="222" pc="268438104" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="226" pc="268438149" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="227" pc="268438156" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="228" pc="268438166" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="231" pc="268438179" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="232" pc="268438204" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="233" pc="268438217" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="234" pc="268438227" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="236" pc="268438234" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="238" pc="268438263" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="240" pc="268438274" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="244" pc="268438313" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="246" pc="268438341" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="248" pc="268438376" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="249" pc="268438404" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="250" pc="268438439" symbol="onUpdate"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="254" pc="268438460" symbol="onExitSleep"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="257" pc="268438464" symbol="onExitSleep"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="262" pc="268438506" symbol="onEnterSleep"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="264" pc="268438510" symbol="onEnterSleep"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="266" pc="268438521" symbol="onEnterSleep"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceView.mc" lineNum="269" pc="268438542" symbol="onEnterSleep"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceApp.mc" lineNum="6" pc="268438559" symbol="initialize"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceApp.mc" lineNum="7" pc="268438563" symbol="initialize"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceApp.mc" lineNum="11" pc="268438582" symbol="onStart"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceApp.mc" lineNum="15" pc="268438587" symbol="onStop"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceApp.mc" lineNum="19" pc="268438592" symbol="getInitialView"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceApp.mc" lineNum="20" pc="268438596" symbol="getInitialView"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceApp.mc" lineNum="23" pc="268438634" symbol="onSettingsChanged"/>
+<entry filename="/home/caos/connectiq/projects/PFace/source/PFaceApp.mc" lineNum="25" pc="268438638" symbol="onSettingsChanged"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="64" symbol="animFrameCount"/>
+<entry field="true" id="57" symbol="NOTIFICATION_COUNT"/>
+<entry field="true" id="47" symbol="NAME_COLOR_DK_GREEN"/>
+<entry id="8" object="true" symbol="PFaceView"/>
+<entry field="true" id="37" symbol="NAME_COLOR_YELLOW"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="65" symbol="animWalk"/>
+<entry id="67" symbol="fillColor"/>
+<entry field="true" id="51" symbol="hrsample"/>
+<entry id="9" object="true" symbol="PFaceApp"/>
+<entry field="true" id="8388611" symbol="Toybox"/>
+<entry id="8388645" symbol="Time"/>
+<entry field="true" id="32" symbol="NAME_COLOR_DK_GRAY"/>
+<entry field="true" id="50" symbol="NAME_COLOR_DK_RED"/>
+<entry field="true" id="58" symbol="ALARM_COUNT"/>
+<entry field="true" id="26" symbol="NAME_COLOR_LT_GRAY"/>
+<entry id="8388770" module="true" symbol="Strings"/>
+<entry field="true" id="19" symbol="Walk7"/>
+<entry field="true" id="18" symbol="Walk6"/>
+<entry field="true" id="17" symbol="Walk5"/>
+<entry field="true" id="16" symbol="Walk4"/>
+<entry field="true" id="15" symbol="Walk3"/>
+<entry field="true" id="41" symbol="emptycolorTitle"/>
+<entry field="true" id="14" symbol="Walk2"/>
+<entry field="true" id="13" symbol="Walk1"/>
+<entry field="true" id="12" symbol="Walk0"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388640" symbol="Lang"/>
+<entry id="8388769" module="true" symbol="Rez"/>
+<entry id="8388924" symbol="Gregorian"/>
+<entry field="true" id="31" symbol="NAME_COLOR_BLUE"/>
+<entry field="true" id="40" symbol="NAME_COLOR_DK_BLUE"/>
+<entry id="62" symbol="animationTimer"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="25" symbol="AppName"/>
+<entry id="75" method="true" symbol="drawSeconds"/>
+<entry field="true" id="34" symbol="circleDataTitle"/>
+<entry field="true" id="36" symbol="NAME_COLOR_GREEN"/>
+<entry id="72" symbol="circleData"/>
+<entry field="true" id="44" symbol="NAME_COLOR_WHITE"/>
+<entry field="true" id="20" symbol="LauncherIcon"/>
+<entry field="true" id="49" symbol="NAME_COLOR_PINK"/>
+<entry id="8388646" symbol="Timer"/>
+<entry id="8389683" method="true" symbol="onSettingsChanged"/>
+<entry field="true" id="21" symbol="RobotoDigits"/>
+<entry field="true" id="52" symbol="WALKING_ANIMATION"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="33" symbol="NAME_COLOR_BLACK"/>
+<entry field="true" id="48" symbol="NAME_COLOR_PURPLE"/>
+<entry id="73" method="true" symbol="loadSettings"/>
+<entry field="true" id="55" symbol="ACTIVITY_PERC"/>
+<entry id="8388771" module="true" symbol="Drawables"/>
+<entry field="true" id="27" symbol="activityFillTitle"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="60" symbol="fontDate"/>
+<entry field="true" id="30" symbol="walkingAnimation"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="63" symbol="animFrame"/>
+<entry field="true" id="43" symbol="alarmcount"/>
+<entry field="true" id="42" symbol="intensitymins"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry id="76" method="true" symbol="animCallback"/>
+<entry id="69" symbol="innerCircleColor"/>
+<entry id="8389743" symbol="backgroundColor"/>
+<entry field="true" id="23" symbol="notificationcount"/>
+<entry field="true" id="45" symbol="fillcolorTitle"/>
+<entry field="true" id="28" symbol="activityperc"/>
+<entry field="true" id="46" symbol="NAME_COLOR_ORANGE"/>
+<entry field="true" id="38" symbol="innercirclecolorTitle"/>
+<entry field="true" id="39" symbol="NAME_COLOR_RED"/>
+<entry id="66" symbol="devSettings"/>
+<entry field="true" id="22" symbol="RobotoRot"/>
+<entry id="74" method="true" symbol="drawField"/>
+<entry id="11" module="true" symbol="Layouts"/>
+<entry field="true" id="56" symbol="INTENSITY_MINUTES"/>
+<entry field="true" id="29" symbol="showSecondsTitle"/>
+<entry id="68" symbol="emptyColor"/>
+<entry id="10" module="true" symbol="Menus"/>
+<entry field="true" id="54" symbol="STEP_COUNT"/>
+<entry field="true" id="35" symbol="stepcount"/>
+<entry field="true" id="53" symbol="HR_SAMPLE"/>
+<entry id="71" symbol="showSeconds"/>
+<entry id="61" symbol="fontSz"/>
+<entry field="true" id="24" symbol="backcolorTitle"/>
+<entry id="70" symbol="activityFill"/>
+<entry id="8388772" module="true" symbol="Fonts"/>
+<entry id="8388633" symbol="ActivityMonitor"/>
+<entry id="59" symbol="fontDigits"/>
+</symbolTable>
+<localVars>
+<entry endPc="268435647" name="appProp" stackId="1" startPc="268435460"/>
+<entry endPc="268435987" name="stepsStr" stackId="5" startPc="268435728"/>
+<entry endPc="268435987" name="steps" stackId="4" startPc="268435728"/>
+<entry endPc="268436791" name="infos" stackId="5" startPc="268436737"/>
+<entry endPc="268437870" name="chSz" stackId="30" startPc="268437778"/>
+<entry endPc="268437883" name="i" stackId="29" startPc="268437778"/>
+<entry endPc="268438459" name="iconsTop" stackId="33" startPc="268436617"/>
+<entry endPc="268438459" name="circleRadius" stackId="19" startPc="268436617"/>
+<entry endPc="268438459" name="hourTime" stackId="10" startPc="268436617"/>
+<entry endPc="268438459" name="dateLeft" stackId="24" startPc="268436617"/>
+<entry endPc="268438459" name="perc" stackId="4" startPc="268436617"/>
+<entry endPc="268438459" name="smallCircleRadiusPerc" stackId="22" startPc="268436617"/>
+<entry endPc="268438459" name="circleY" stackId="21" startPc="268436617"/>
+<entry endPc="268438459" name="circleX" stackId="20" startPc="268436617"/>
+<entry endPc="268438459" name="hour" stackId="9" startPc="268436617"/>
+<entry endPc="268438459" name="hourSz" stackId="12" startPc="268436617"/>
+<entry endPc="268438459" name="dateTop" stackId="27" startPc="268436617"/>
+<entry endPc="268438459" name="minSz" stackId="13" startPc="268436617"/>
+<entry endPc="268438459" name="minTop" stackId="16" startPc="268436617"/>
+<entry endPc="268438459" name="distChar" stackId="25" startPc="268436617"/>
+<entry endPc="268438459" name="hourTop" stackId="14" startPc="268436617"/>
+<entry endPc="268438459" name="w" stackId="2" startPc="268436617"/>
+<entry endPc="268438459" name="dateHeight" stackId="26" startPc="268436617"/>
+<entry endPc="268438459" name="dateStr" stackId="8" startPc="268436617"/>
+<entry endPc="268438459" name="dateArray" stackId="28" startPc="268436617"/>
+<entry endPc="268438459" name="clockTime" stackId="6" startPc="268436617"/>
+<entry endPc="268438459" name="lineY" stackId="18" startPc="268436617"/>
+<entry endPc="268438459" name="minLeft" stackId="17" startPc="268436617"/>
+<entry endPc="268438459" name="iconsLeft" stackId="32" startPc="268436617"/>
+<entry endPc="268438459" name="battTopW" stackId="35" startPc="268436617"/>
+<entry endPc="268438459" name="battW" stackId="34" startPc="268436617"/>
+<entry endPc="268438459" name="minTime" stackId="11" startPc="268436617"/>
+<entry endPc="268438459" name="strLen" stackId="23" startPc="268436617"/>
+<entry endPc="268438459" name="h" stackId="3" startPc="268436617"/>
+<entry endPc="268438459" name="date" stackId="7" startPc="268436617"/>
+<entry endPc="268438459" name="hourLeft" stackId="15" startPc="268436617"/>
+<entry endPc="268438459" name="battPerc" stackId="37" startPc="268436617"/>
+<entry endPc="268438459" name="iconsSz" stackId="31" startPc="268436617"/>
+<entry endPc="268438459" name="battTopH" stackId="36" startPc="268436617"/>
+</localVars>
+<annotations/>
+<functions>
+<functionEntry name="loadSettings" parent="PFaceView">
+<documentation/>
+</functionEntry>
+<functionEntry name="drawField" parent="PFaceView">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="drawSeconds" parent="PFaceView">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="initialize" parent="PFaceView">
+<documentation/>
+</functionEntry>
+<functionEntry name="onLayout" parent="PFaceView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="animCallback" parent="PFaceView">
+<documentation/>
+</functionEntry>
+<functionEntry name="onUpdate" parent="PFaceView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onExitSleep" parent="PFaceView">
+<documentation/>
+</functionEntry>
+<functionEntry name="onEnterSleep" parent="PFaceView">
+<documentation/>
+</functionEntry>
+<functionEntry name="initialize" parent="PFaceApp">
+<documentation/>
+</functionEntry>
+<functionEntry name="onStart" parent="PFaceApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onStop" parent="PFaceApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="getInitialView" parent="PFaceApp">
+<documentation/>
+</functionEntry>
+<functionEntry name="onSettingsChanged" parent="PFaceApp">
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

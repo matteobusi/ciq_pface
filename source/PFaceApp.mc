@@ -1,7 +1,8 @@
 using Toybox.Application as App;
+using Toybox.WatchUi as Ui;
 
-class PFaceApp extends App.AppBase {
-
+class PFaceApp extends App.AppBase
+{
     function initialize() {
         AppBase.initialize();
     }
@@ -17,6 +18,11 @@ class PFaceApp extends App.AppBase {
     // Return the initial view of your application here
     function getInitialView() {
         return [ new PFaceView() ];
+    }
+
+    function onSettingsChanged()
+    {
+        Ui.requestUpdate();
     }
 
 }

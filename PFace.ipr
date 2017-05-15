@@ -39,7 +39,9 @@
     </properties>
   </component>
   <component name="InspectionProjectProfileManager">
-    <option name="PROJECT_PROFILE" />
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
     <version value="1.0" />
   </component>
   <component name="ProjectModuleManager">
@@ -47,8 +49,11 @@
       <module fileurl="file://$PROJECT_DIR$/PFace.iml" filepath="$PROJECT_DIR$/PFace.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="true" project-jdk-name="2.2.5" project-jdk-type="MonkeyCSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" project-jdk-name="2.2.5" project-jdk-type="MonkeyCSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="masterDetails">
     <states>

@@ -9,6 +9,16 @@ using Toybox.Time.Gregorian;
 
 class PFaceView extends Ui.WatchFace
 {
+    enum {
+        WALKING_ANIMATION,
+        HR_SAMPLE,
+        STEP_COUNT,
+        ACTIVITY_PERC,
+        INTENSITY_MINUTES,
+        NOTIFICATION_COUNT,
+        ALARM_COUNT
+    }
+
     hidden var fontDigits;
     hidden var fontDate;
     hidden var fontSz = 144;
@@ -17,11 +27,58 @@ class PFaceView extends Ui.WatchFace
     hidden var animFrameCount = 8;
     hidden var animWalk;
     hidden var devSettings;
-    hidden var fillColor = Gfx.COLOR_BLUE;
-    hidden var backgroundColor = Gfx.COLOR_BLACK;
-    hidden var emptyColor = Gfx.COLOR_WHITE;
-    hidden var innerCircleColor = Gfx.COLOR_DK_GRAY;
+    hidden var fillColor;
+    hidden var backgroundColor;
+    hidden var emptyColor;
+    hidden var innerCircleColor;
+    hidden var activityFill;
+    hidden var showSeconds;
+    hidden var circleData;
 
+    function loadSettings()
+    {
+        var appProp = Application.getApp();
+        fillColor = appProp.getProperty("fillcolor");
+        backgroundColor = appProp.getProperty("backcolor");
+        emptyColor = appProp.getProperty("emptycolor");
+        innerCircleColor = appProp.getProperty("innercirclecolor");
+        activityFill = appProp.getProperty("activityFill");
+        showSeconds = appProp.getProperty("showSeconds");
+        circleData = appProp.getProperty("circleData");
+    }
+
+    function drawField(dc, x, y)
+    {
+        if (circleData == WALKING_ANIMATION)
+        {
+            dc.drawBitmap(x, y, animWalk[animFrame]);
+        }
+        else if (circleData == STEP_COUNT)
+        {
+            dc.setColor(emptyColor, Gfx.COLOR_TRANSPARENT);
+            var steps = ActivityMonitor.getInfo().steps;
+            var stepsStr = steps;
+
+            if (steps >= 1000 && steps < 10000)
+            {
+                stepsStr = Lang.format("$1$k", [(steps/1000.0).format("%.1f")]);
+            }
+            else if (steps >= 10000)
+            {
+                stepsStr = Lang.format("$1$", [(steps/1000).format("%d")]);
+            }
+
+            dc.drawText(x, y, Gfx.FONT_XTINY, stepsStr, Gfx.TEXT_JUSTIFY_LEFT);
+        }
+    }
+
+    function drawSeconds(dc, x, y)
+    {
+        if (showSeconds)
+        {
+            // TODO: draw seconds
+        }
+    }
     function initialize()
     {
         WatchFace.initialize();
@@ -38,6 +95,8 @@ class PFaceView extends Ui.WatchFace
         Ui.loadResource(Rez.Drawables.Walk4), Ui.loadResource(Rez.Drawables.Walk5),
         Ui.loadResource(Rez.Drawables.Walk6), Ui.loadResource(Rez.Drawables.Walk7)];
 
+        self.loadSettings();
+
         animationTimer = new Timer.Timer();
     }
 
@@ -52,6 +111,8 @@ class PFaceView extends Ui.WatchFace
     // Update the view
     function onUpdate(dc)
     {
+        self.loadSettings();
+
         View.onUpdate(dc);
         dc.setColor(Gfx.COLOR_TRANSPARENT, backgroundColor);
         
@@ -60,15 +121,21 @@ class PFaceView extends Ui.WatchFace
         var w = dc.getWidth();
         var h = dc.getHeight();
 
-        var infos = ActivityMonitor.getInfo();
-        var perc = infos.steps.toDouble()/infos.stepGoal.toDouble();
+        var perc = 0;
+
+        if (activityFill)
+        {
+            var infos = ActivityMonitor.getInfo();
+            perc = infos.steps.toDouble()/infos.stepGoal.toDouble();
+        }
 
         if (perc > 1)
         {
             perc = 1;
         }
 
-       // Sys.println(perc);
+
+        // Sys.println(perc);
 
         // Get and show the current time
         var clockTime = Sys.getClockTime();
@@ -113,8 +180,8 @@ class PFaceView extends Ui.WatchFace
         var distChar = 22;
         var dateHeight = strLen*distChar;
         
-        var dateTop = (h-dateHeight)/2 + 1;     
-        
+        var dateTop = (h-dateHeight)/2 + 1;
+
         dc.setColor(fillColor, fillColor);
         dc.fillRectangle(hourLeft, hourTop+1, hourSz[0], hourSz[1] + minSz[1]);
         dc.fillRectangle(dateLeft, dateTop+1, 28, distChar*strLen);
@@ -141,17 +208,19 @@ class PFaceView extends Ui.WatchFace
         dc.setColor(backgroundColor, backgroundColor);
         dc.fillRectangle(dateLeft, dateTop+1, 28, h);
 
+        if (activityFill)
+        {
+            dc.setColor(fillColor, fillColor);
+            dc.setPenWidth(2);
+            dc.drawLine(0, lineY, w, lineY);
 
-        dc.setColor(fillColor, fillColor);
-        dc.setPenWidth(2);
-        dc.drawLine(0, lineY, w, lineY);
+            dc.fillCircle(circleX, circleY, circleRadius);
+            dc.setColor(innerCircleColor, innerCircleColor);
+            dc.fillCircle(circleX, circleY, smallCircleRadiusPerc*circleRadius);
 
-        dc.fillCircle(circleX, circleY, circleRadius);
-
-        dc.setColor(innerCircleColor, innerCircleColor);
-        dc.fillCircle(circleX, circleY, smallCircleRadiusPerc*circleRadius);
-
-        dc.drawBitmap(circleX - smallCircleRadiusPerc*circleRadius + 1, circleY - smallCircleRadiusPerc*circleRadius + 1, animWalk[animFrame]);
+            drawSeconds(dc, circleX , circleY);
+            drawField(dc, circleX - (smallCircleRadiusPerc*circleRadius)/1.3, circleY - smallCircleRadiusPerc*circleRadius + 2);
+        }
 
         // Draw extra field for notifications, alarms, battery and "do not disturb"
         var iconsSz = 20;
@@ -199,5 +268,4 @@ class PFaceView extends Ui.WatchFace
 
         Ui.requestUpdate();
     }
-
 }

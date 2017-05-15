@@ -1,0 +1,97 @@
+<settings>
+    <setting propertyKey="@Properties.backcolor" title="@Strings.backcolorTitle" >
+        <settingConfig type="list">
+            <listEntry value="0xFFFFFF">@Strings.NAME_COLOR_WHITE</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.NAME_COLOR_LT_GRAY</listEntry>
+            <listEntry value="0x555555">@Strings.NAME_COLOR_DK_GRAY</listEntry>
+            <listEntry value="0x000000">@Strings.NAME_COLOR_BLACK</listEntry>
+            <listEntry value="0xFF0000">@Strings.NAME_COLOR_RED</listEntry>
+            <listEntry value="0xAA0000">@Strings.NAME_COLOR_DK_RED</listEntry>
+            <listEntry value="0xFF5500">@Strings.NAME_COLOR_ORANGE</listEntry>
+            <listEntry value="0xFFAA00">@Strings.NAME_COLOR_YELLOW</listEntry>
+            <listEntry value="0x00FF00">@Strings.NAME_COLOR_GREEN</listEntry>
+            <listEntry value="0x00AA00">@Strings.NAME_COLOR_DK_GREEN</listEntry>
+            <listEntry value="0x00AAFF">@Strings.NAME_COLOR_BLUE</listEntry>
+            <listEntry value="0x0000FF">@Strings.NAME_COLOR_DK_BLUE</listEntry>
+            <listEntry value="0xAA00FF">@Strings.NAME_COLOR_PURPLE</listEntry>
+            <listEntry value="0xFF00FF">@Strings.NAME_COLOR_PINK</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.fillcolor" title="@Strings.fillcolorTitle" >
+        <settingConfig type="list">
+            <listEntry value="0xFFFFFF">@Strings.NAME_COLOR_WHITE</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.NAME_COLOR_LT_GRAY</listEntry>
+            <listEntry value="0x555555">@Strings.NAME_COLOR_DK_GRAY</listEntry>
+            <listEntry value="0x000000">@Strings.NAME_COLOR_BLACK</listEntry>
+            <listEntry value="0xFF0000">@Strings.NAME_COLOR_RED</listEntry>
+            <listEntry value="0xAA0000">@Strings.NAME_COLOR_DK_RED</listEntry>
+            <listEntry value="0xFF5500">@Strings.NAME_COLOR_ORANGE</listEntry>
+            <listEntry value="0xFFAA00">@Strings.NAME_COLOR_YELLOW</listEntry>
+            <listEntry value="0x00FF00">@Strings.NAME_COLOR_GREEN</listEntry>
+            <listEntry value="0x00AA00">@Strings.NAME_COLOR_DK_GREEN</listEntry>
+            <listEntry value="0x00AAFF">@Strings.NAME_COLOR_BLUE</listEntry>
+            <listEntry value="0x0000FF">@Strings.NAME_COLOR_DK_BLUE</listEntry>
+            <listEntry value="0xAA00FF">@Strings.NAME_COLOR_PURPLE</listEntry>
+            <listEntry value="0xFF00FF">@Strings.NAME_COLOR_PINK</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.emptycolor" title="@Strings.emptycolorTitle" >
+        <settingConfig type="list">
+            <listEntry value="0xFFFFFF">@Strings.NAME_COLOR_WHITE</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.NAME_COLOR_LT_GRAY</listEntry>
+            <listEntry value="0x555555">@Strings.NAME_COLOR_DK_GRAY</listEntry>
+            <listEntry value="0x000000">@Strings.NAME_COLOR_BLACK</listEntry>
+            <listEntry value="0xFF0000">@Strings.NAME_COLOR_RED</listEntry>
+            <listEntry value="0xAA0000">@Strings.NAME_COLOR_DK_RED</listEntry>
+            <listEntry value="0xFF5500">@Strings.NAME_COLOR_ORANGE</listEntry>
+            <listEntry value="0xFFAA00">@Strings.NAME_COLOR_YELLOW</listEntry>
+            <listEntry value="0x00FF00">@Strings.NAME_COLOR_GREEN</listEntry>
+            <listEntry value="0x00AA00">@Strings.NAME_COLOR_DK_GREEN</listEntry>
+            <listEntry value="0x00AAFF">@Strings.NAME_COLOR_BLUE</listEntry>
+            <listEntry value="0x0000FF">@Strings.NAME_COLOR_DK_BLUE</listEntry>
+            <listEntry value="0xAA00FF">@Strings.NAME_COLOR_PURPLE</listEntry>
+            <listEntry value="0xFF00FF">@Strings.NAME_COLOR_PINK</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.innercirclecolor" title="@Strings.innercirclecolorTitle" >
+        <settingConfig type="list">
+            <listEntry value="0xFFFFFF">@Strings.NAME_COLOR_WHITE</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.NAME_COLOR_LT_GRAY</listEntry>
+            <listEntry value="0x555555">@Strings.NAME_COLOR_DK_GRAY</listEntry>
+            <listEntry value="0x000000">@Strings.NAME_COLOR_BLACK</listEntry>
+            <listEntry value="0xFF0000">@Strings.NAME_COLOR_RED</listEntry>
+            <listEntry value="0xAA0000">@Strings.NAME_COLOR_DK_RED</listEntry>
+            <listEntry value="0xFF5500">@Strings.NAME_COLOR_ORANGE</listEntry>
+            <listEntry value="0xFFAA00">@Strings.NAME_COLOR_YELLOW</listEntry>
+            <listEntry value="0x00FF00">@Strings.NAME_COLOR_GREEN</listEntry>
+            <listEntry value="0x00AA00">@Strings.NAME_COLOR_DK_GREEN</listEntry>
+            <listEntry value="0x00AAFF">@Strings.NAME_COLOR_BLUE</listEntry>
+            <listEntry value="0x0000FF">@Strings.NAME_COLOR_DK_BLUE</listEntry>
+            <listEntry value="0xAA00FF">@Strings.NAME_COLOR_PURPLE</listEntry>
+            <listEntry value="0xFF00FF">@Strings.NAME_COLOR_PINK</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.circleData" title="@Strings.circleDataTitle" >
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.walkingAnimation</listEntry>
+            <listEntry value="1">@Strings.hrsample</listEntry>
+            <listEntry value="2">@Strings.stepcount</listEntry>
+            <listEntry value="3">@Strings.activityperc</listEntry>
+            <listEntry value="4">@Strings.intensitymins</listEntry>
+            <listEntry value="5">@Strings.notificationcount</listEntry>
+            <listEntry value="6">@Strings.alarmcount</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.activityFill" title="@Strings.activityFillTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.showSeconds" title="@Strings.showSecondsTitle">
+        <settingConfig type="boolean" />
+    </setting>
+</settings>

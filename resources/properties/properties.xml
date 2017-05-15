@@ -1,9 +1,10 @@
-<settings>
-    <setting propertyKey="@Properties.myString" title="@Strings.MyStringTitle" >
-        <settingConfig type="list">
-            <listEntry value="0">@Strings.HelloWorld</listEntry>
-            <listEntry value="1">@Strings.Ackbar</listEntry>
-            <listEntry value="2">@Strings.Garmin</listEntry>
-        </settingConfig>
-    </setting>
-</settings>
+<properties>
+    <property id="appVersion" type="string">0.3Beta</property>
+    <property id="backcolor" type="number">0x000000</property>
+    <property id="fillcolor" type="number">0x00AAFF</property>
+    <property id="emptycolor" type="number">0xFFFFFF</property>
+    <property id="innercirclecolor" type="number">0x555555</property>
+    <property id="circleData" type="number">0</property>
+    <property id="activityFill" type="boolean">true</property>
+    <property id="showSeconds" type="boolean">true</property>
+</properties>
