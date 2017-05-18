@@ -1,5 +1,7 @@
 <fonts>
     <font id="RobotoDigits" filename="roboto.fnt"/>
     <font id="RobotoRot" filename="roboto_rotate.fnt"/>
+    <font id="IconsFont" filename="icons.fnt"/>
+    <font id="RobotoSmall" filename="robotosmall.fnt"/>
 
 </fonts>

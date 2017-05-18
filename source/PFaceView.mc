@@ -10,13 +10,15 @@ using Toybox.Time.Gregorian;
 class PFaceView extends Ui.WatchFace
 {
     enum {
-        WALKING_ANIMATION,
+        WALKING_ANIMATION, // ok
         HR_SAMPLE,
-        STEP_COUNT,
-        ACTIVITY_PERC,
+        STEP_COUNT, // ok
+        ACTIVITY_PERC, // ok
         INTENSITY_MINUTES,
         NOTIFICATION_COUNT,
-        ALARM_COUNT
+        ALARM_COUNT,
+        DISTANCE, // ok
+        FLOORS
     }
 
     hidden var fontDigits;
@@ -34,6 +36,15 @@ class PFaceView extends Ui.WatchFace
     hidden var activityFill;
     hidden var showSeconds;
     hidden var circleData;
+    hidden var circleFloat;
+
+
+    hidden var circleRadius = 21;
+    hidden var smallCircleRadiusPerc = 0.95;
+
+
+    hidden var iconsFont;
+    hidden var smallFieldFont;
 
     function loadSettings()
     {
@@ -45,30 +56,126 @@ class PFaceView extends Ui.WatchFace
         activityFill = appProp.getProperty("activityFill");
         showSeconds = appProp.getProperty("showSeconds");
         circleData = appProp.getProperty("circleData");
+        circleFloat = appProp.getProperty("circleFloat");
+
+
+        if (circleData == WALKING_ANIMATION)
+        {
+            animWalk = [Ui.loadResource(Rez.Drawables.Walk0), Ui.loadResource(Rez.Drawables.Walk1),
+            Ui.loadResource(Rez.Drawables.Walk2), Ui.loadResource(Rez.Drawables.Walk3),
+            Ui.loadResource(Rez.Drawables.Walk4), Ui.loadResource(Rez.Drawables.Walk5),
+            Ui.loadResource(Rez.Drawables.Walk6), Ui.loadResource(Rez.Drawables.Walk7)];
+
+            animationTimer = new Timer.Timer();
+        }
     }
 
     function drawField(dc, x, y)
     {
         if (circleData == WALKING_ANIMATION)
         {
-            dc.drawBitmap(x, y, animWalk[animFrame]);
+            dc.drawBitmap(x -smallCircleRadiusPerc*circleRadius+1, y -smallCircleRadiusPerc*circleRadius+1, animWalk[animFrame]);
         }
-        else if (circleData == STEP_COUNT)
+        else
         {
+            var strContent = "";
+            var icon = "";
+
+            var info = ActivityMonitor.getInfo();
+
+            if (circleData == STEP_COUNT)
+            {
+                var steps = info.steps;
+
+                if (steps >= 1000 && steps < 10000)
+                {
+                    strContent = Lang.format("$1$k", [(steps/1000.0).format("%.1f")]);
+                }
+                else if (steps >= 10000)
+                {
+                    strContent = Lang.format("$1$k", [(steps/1000).format("%d")]);
+                }
+                else
+                {
+                    strContent = Lang.format("$1$", [(steps).format("%d")]);
+                }
+
+                icon = "r";
+            }
+            else if (circleData == ACTIVITY_PERC)
+            {
+                var perc = (100*info.steps)/info.stepGoal;
+
+                strContent = perc.toString() + "%";
+                icon = "r";
+            }
+            else if (circleData == DISTANCE)
+            {
+                if (Sys.getDeviceSettings().distanceUnits == Sys.UNIT_METRIC)
+                {
+                    var dist = info.distance/100000.0;
+                    if (dist >= 10)
+                    {
+                       strContent = Lang.format("$1$\nkm", [dist.format("%d")]);
+                    }
+                    else
+                    {
+                       strContent = Lang.format("$1$\nkm", [dist.format("%.1f")]);
+                    }
+                }
+                else
+                {
+                    var dist = (info.distance*6.21371)/1000000;
+                    if (dist >= 10)
+                    {
+                       strContent = Lang.format("$1$\nmi", [dist.format("%d")]);
+                    }
+                    else
+                    {
+                       strContent = Lang.format("$1$\nmi", [dist.format("%.1f")]);
+                    }
+                }
+                icon = " ";
+            }
+            else if (info has :floorsClimbed && circleData == FLOORS)
+            {
+                strContent = info.floorsClimbed.toString();
+                icon = "f";
+            }
+            else if(info has :activeMinutesDay && circleData == INTENSITY_MINUTES)
+            {
+                strContent = info.activeMinutesDay.total.toString() + "m";
+                icon = "m";
+            }
+            else if(circleData == ALARM_COUNT)
+            {
+                strContent = Sys.getDeviceSettings().alarmCount.toString();
+                icon = "a";
+            }
+            else if(circleData == NOTIFICATION_COUNT)
+            {
+                strContent = Sys.getDeviceSettings().notificationCount.toString();
+                icon = "n";
+            }
+            else if(ActivityMonitor has :getHeartRateHistory && circleData == HR_SAMPLE)
+            {
+                strContent = ActivityMonitor.getHeartRateHistory(1, true).next().heartRate.toString();
+                icon = "h";
+            }
+            else
+            {
+                strContent = "na";
+                icon = " ";
+            }
+
+            var txtSz = dc.getTextDimensions(strContent, Gfx.FONT_XTINY);
+            var iconSz = dc.getTextDimensions(icon, Gfx.FONT_XTINY);
             dc.setColor(emptyColor, Gfx.COLOR_TRANSPARENT);
-            var steps = ActivityMonitor.getInfo().steps;
-            var stepsStr = steps;
-
-            if (steps >= 1000 && steps < 10000)
+            dc.drawText(x, y - 16, smallFieldFont, strContent, Gfx.TEXT_JUSTIFY_CENTER);
+            if (icon != " ")
             {
-                stepsStr = Lang.format("$1$k", [(steps/1000.0).format("%.1f")]);
+                dc.drawText(x, y + 2, iconsFont, icon, Gfx.TEXT_JUSTIFY_CENTER);
             }
-            else if (steps >= 10000)
-            {
-                stepsStr = Lang.format("$1$", [(steps/1000).format("%d")]);
-            }
-
-            dc.drawText(x, y, Gfx.FONT_XTINY, stepsStr, Gfx.TEXT_JUSTIFY_LEFT);
         }
     }
 
@@ -89,15 +196,10 @@ class PFaceView extends Ui.WatchFace
     {
         fontDigits = Ui.loadResource(Rez.Fonts.RobotoDigits);
         fontDate = Ui.loadResource(Rez.Fonts.RobotoRot);
-
-        animWalk = [Ui.loadResource(Rez.Drawables.Walk0), Ui.loadResource(Rez.Drawables.Walk1),
-        Ui.loadResource(Rez.Drawables.Walk2), Ui.loadResource(Rez.Drawables.Walk3),
-        Ui.loadResource(Rez.Drawables.Walk4), Ui.loadResource(Rez.Drawables.Walk5),
-        Ui.loadResource(Rez.Drawables.Walk6), Ui.loadResource(Rez.Drawables.Walk7)];
+        iconsFont = Ui.loadResource(Rez.Fonts.IconsFont);
+        smallFieldFont =  Ui.loadResource(Rez.Fonts.RobotoSmall);
 
         self.loadSettings();
-
-        animationTimer = new Timer.Timer();
     }
 
     function animCallback()
@@ -170,10 +272,20 @@ class PFaceView extends Ui.WatchFace
 
         var lineY = hourTop + (1-perc)*(hourSz[1] + minSz[1]);
 
-        var circleRadius = 18;
-        var circleX = hourLeft - circleRadius + 1;
+        var circleX = hourLeft - circleRadius + 3;
         var circleY = lineY;
-        var smallCircleRadiusPerc = 0.9;
+
+        if (circleFloat)
+        {
+            if (lineY <= circleRadius/2)
+            {
+                circleY = circleRadius/1.5;
+            }
+            else if (lineY >= h - circleRadius/2)
+            {
+                circleY = h - circleRadius/1.5;
+            }
+        }
 
         var strLen = dateStr.length();
         var dateLeft = 0.07*w -1;
@@ -219,7 +331,7 @@ class PFaceView extends Ui.WatchFace
             dc.fillCircle(circleX, circleY, smallCircleRadiusPerc*circleRadius);
 
             drawSeconds(dc, circleX , circleY);
-            drawField(dc, circleX - (smallCircleRadiusPerc*circleRadius)/1.3, circleY - smallCircleRadiusPerc*circleRadius + 2);
+            drawField(dc, circleX, circleY);
         }
 
         // Draw extra field for notifications, alarms, battery and "do not disturb"
@@ -254,7 +366,10 @@ class PFaceView extends Ui.WatchFace
     function onExitSleep()
     {
         // Start timer to draw the man :)
-        animationTimer.start(self.method(:animCallback), 130, true);
+        if (animationTimer)
+        {
+            animationTimer.start(self.method(:animCallback), 130, true);
+        }
     }
 
 

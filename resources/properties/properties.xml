@@ -7,4 +7,6 @@
     <property id="circleData" type="number">0</property>
     <property id="activityFill" type="boolean">true</property>
     <property id="showSeconds" type="boolean">true</property>
+    <property id="circleFloat" type="boolean">true</property>
+
 </properties>

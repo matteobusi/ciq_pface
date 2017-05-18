@@ -84,14 +84,21 @@
             <listEntry value="4">@Strings.intensitymins</listEntry>
             <listEntry value="5">@Strings.notificationcount</listEntry>
             <listEntry value="6">@Strings.alarmcount</listEntry>
+            <listEntry value="7">@Strings.distance</listEntry>
+            <listEntry value="8">@Strings.floors</listEntry>
+
         </settingConfig>
     </setting>
 
     <setting propertyKey="@Properties.activityFill" title="@Strings.activityFillTitle">
         <settingConfig type="boolean" />
     </setting>
-
+<!--
     <setting propertyKey="@Properties.showSeconds" title="@Strings.showSecondsTitle">
+        <settingConfig type="boolean" />
+    </setting>
+-->
+    <setting propertyKey="@Properties.circleFloat" title="@Strings.circleFloatTitle">
         <settingConfig type="boolean" />
     </setting>
 </settings>

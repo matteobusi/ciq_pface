@@ -31,6 +31,11 @@
     <string id="intensitymins">Intensity minutes</string>
     <string id="notificationcount">Notification count</string>
     <string id="alarmcount">Alarm count</string>
+    <string id="distance">Distance</string>
+    <string id="floors">Climbed floors</string>
+
 
     <string id="showSecondsTitle">Show seconds</string>
+
+    <string id="circleFloatTitle">Make circle float</string>
 </strings>
