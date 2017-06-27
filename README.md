@@ -1,4 +1,6 @@
-as# PFace
+# PFace
+A garmin watchface, available on Garmin app store at https://apps.garmin.com/en-US/apps/b282d79b-2dc3-440a-b09a-4cb1c04ab1fd#0
+
 ## Description
 This watch face is inspired by "NoFrills" (and to be fair from a watch face I've seen on another platform).
 
